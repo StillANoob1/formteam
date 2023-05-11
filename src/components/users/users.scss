@@ -1,0 +1,123 @@
+@import "../../css-config/mixins.scss";
+.container{
+    background: linear-gradient(rgba(0,8,51,0.9),rgba(0,8,51,0.9));
+    position: relative;
+    padding: 3rem;
+    padding-top: 8rem;
+    .showTeam{
+        position: fixed;
+        top: 3rem;
+        right: 3rem;
+        z-index: 1;
+        background-color: white;
+        color: #0a6aa7;
+        box-shadow: 0 6px 15px #0a6aa7;
+        padding: 1rem 2rem;
+        border-radius: 3rem;
+        cursor: pointer;
+        
+       
+    }
+    .filters{
+        display: flex;
+        flex-direction: column;
+        
+        align-items: center;
+        gap: 2rem;
+
+        .search{
+            width: 100%;
+            max-width: 700px;
+            background: rgba(255,255,255,0.2);
+            display: flex;
+            align-items: center;
+            border-radius: 60px;
+            padding: .5rem 1rem;
+            backdrop-filter: blur(4px) saturate(180%);
+            input{
+                background: transparent;
+                flex: 1;
+                border: 0;
+                outline: none;
+                padding: .5rem 1rem;
+                font-size: 1.8rem;
+                color: #cac7ff;
+                &::placeholder{
+                    color: #cac7ff;
+                }
+            }
+            .icon{
+                border-radius: 50%;
+                width: 4rem;
+                height: 4rem;
+                background-color: #58629b;
+                cursor: pointer;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                svg{
+                    font-size: 1.8rem;
+                }
+            }
+        }
+        .selectFilters{
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            flex-flow: row wrap;
+          
+            select{
+                padding: 1rem 1.5rem;
+                border-radius: 50px;
+                background-color: transparent;
+                background: rgba(255,255,255,0.2);
+                backdrop-filter: blur(4px) saturate(180%);
+                color: white;
+                &:focus{
+                    outline: none;
+                }
+                option{
+                    background-color: #212157 ;
+                    
+                    
+                }
+            }
+        }
+    }
+    .cards{
+    
+        display: flex;
+        padding: 30px 0;
+        gap: 3rem;
+        justify-content: center;
+        flex-flow: row wrap;
+    }
+    .pagination{
+        padding: 5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: row wrap;
+        gap: 1.5rem;
+        .pageButton{
+            background-color: #0a6aa7;
+            padding: 1rem 2rem;
+            border: none;
+            color: white;
+            border-radius: 20px;
+        }
+        .active{
+            background-color: #0a6aa7;
+            padding: 1rem;
+            border-radius: 50%;
+            color: white;
+        }
+        .notActive{
+            background-color: rgba(0,8,51,0.9);
+            padding: 1rem;
+            border-radius: 50%;
+            color: white;
+        }
+    }
+}
+

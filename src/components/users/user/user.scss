@@ -1,0 +1,82 @@
+@import "../../../css-config/mixins.scss";
+.card{
+    width: 19rem;
+    height: 27rem;
+    background-color: #0a6aa7;
+    padding: 1rem 1rem;
+    color: white;
+    position: relative;
+    border-radius: 2rem;
+   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.4rem;
+    transition: all 1s ease-in-out;
+    
+    &:hover{
+        transform: scale(1.1);
+        box-shadow: 0 3px 5px 0 #0a6aa7;
+    }
+    
+
+    img{
+      width: 4.5rem;
+      margin-top: 1rem;
+    border-radius: 50%;
+     background-color: white;
+    
+    }
+    h3{
+        font-size: 2rem;
+        margin-top: 1rem;;
+        margin-bottom: .5rem;
+    }
+    p{
+        overflow-wrap: break-word;
+        font-size: 1.2rem;
+    }
+    button{
+        background-color: white;
+        color: #0a6aa7;
+        border: none;
+        outline: none;
+        box-shadow: 0 6px 15px #0a6aa7;
+        padding: 1rem 2rem;
+        border-radius: 3rem;
+        
+        font-weight: 600;
+        font-size: 1.5rem;
+        position: absolute;
+        top: 55%;
+        z-index: 1;
+        cursor: pointer;
+        &:hover{
+            background-color:#0a6aa7 ;
+            color: white;
+        }
+    }
+    .bottom{
+        background-color: white;
+        color: #999;
+        position: absolute;
+        bottom: 0;
+        height: 40%;
+        width: 100%;
+        border-radius: 2rem;
+        overflow-y: hidden;
+       .content{
+        padding: 0rem 1rem;
+        margin-top: 4rem;
+
+        .info{
+            margin-top: .5rem;
+            .heading{
+                font-weight: bold;
+               
+            }
+        }
+       
+       }
+    }
+  }
